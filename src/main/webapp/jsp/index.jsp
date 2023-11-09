@@ -100,7 +100,7 @@ p.copyright {
 		<header>
 			<h2>${pass}</h2>
 			<h3>${fail}</h3>
-			<h1>Welcome to Quiz Application</h1>
+			<h1>Welcome to Exam Application</h1>
 		</header>
 		<main>
 			<div class="buttons">
@@ -111,7 +111,7 @@ p.copyright {
 		</main>
 	</div>
 	<footer>
-		<p class="copyright">©Saish</p>
+		<p class="copyright">©Priyankur</p>
 	</footer>
 	<script>
 		setTimeout(function() {

@@ -49,7 +49,7 @@ public class TrainerService {
 
 			trainerDao.save(trainer);
 
-			// mailLogic.sendMail(trainer);
+			 mailLogic.sendMail(trainer);
 
 			map.put("pass", "Link Sent Success, CLick on Link to Create Account");
 			return "TrainerLogin";
@@ -127,7 +127,7 @@ public class TrainerService {
 			return "TrainerForgotPassword";
 		} else {
 			trainer.setToken("xyz" + new Random().nextInt() + "pqr");
-			// mailLogic.reSendLink(trainer);
+			 mailLogic.reSendLink(trainer);
 			trainerDao.save(trainer);
 			map.put("pass", "Reset Link Sent Success Click that link to Reset Password");
 			return "TrainerLogin";

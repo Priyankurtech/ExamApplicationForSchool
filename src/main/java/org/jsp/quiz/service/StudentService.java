@@ -66,7 +66,7 @@ public class StudentService {
 					return "StudentSignup";
 				} else {
 					student1.setOtp(new Random().nextInt(100000, 999999));
-					// mailLogic.sendMail(student1);
+					 mailLogic.sendMail(student1);
 					studentDao.save(student1);
 					map.put("id", student1.getId());
 					map.put("pass", "OTP Sent Again");
@@ -148,7 +148,7 @@ public class StudentService {
 			return "StudentForgotPassword";
 		} else {
 			student.setOtp(new Random().nextInt(100000, 999999));
-			// mailLogic.reSendMail(student);
+			 mailLogic.reSendMail(student);
 			studentDao.save(student);
 			map.put("pass", "OTP Sent Success");
 			map.put("id", student.getId());
